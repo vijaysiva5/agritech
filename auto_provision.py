@@ -972,11 +972,11 @@ def create_Weather_api_table(dynamodb = None):
             KeySchema=[
                 {
                     'AttributeName': 'Latitude',
-                    'KeyType': 'HASH'  # Partition key
+                    'KeyType': 'RANGE'  # Partition key
                 },
                 {
                     'AttributeName': 'Longitude',
-                    'KeyType': 'HASH'  # Sort key
+                    'KeyType': 'RANGE'  # Sort key
                 }
             ],
             AttributeDefinitions=[
